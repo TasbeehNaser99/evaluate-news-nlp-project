@@ -1,0 +1,24 @@
+/* mixins.scss */
+@mixin button-style($bg-color, $hover-color) {
+    padding: 12px 18px;
+    border: none;
+    background-color: $bg-color;
+    color: $white;
+    font-size: 16px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+
+    &:hover {
+        background-color: $hover-color;
+        transform: translateY(-2px);
+    }
+}
+
+@mixin gradient-bg($start-color, $end-color) {
+    background: linear-gradient(to right, $start-color, $end-color);
+}
+
+@mixin box-shadow {
+    box-shadow: $box-shadow;
+}

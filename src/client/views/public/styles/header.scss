@@ -1,0 +1,10 @@
+/* header.scss */
+@import 'variables';
+
+h2 {
+    color: $dark-pink;
+    font-size: 26px;
+    margin-bottom: 20px;
+    @include gradient-bg($primary-pink, $secondary-pink);
+    -webkit-text-fill-color: transparent;
+}

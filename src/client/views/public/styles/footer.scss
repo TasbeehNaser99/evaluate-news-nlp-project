@@ -1,0 +1,32 @@
+/* footer.scss */
+@import 'variables';
+
+footer {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid $primary-pink;
+    background-color: $dark-pink;
+    color: $white;
+
+    #results {
+        max-width: 600px;  
+        width: 80%;  
+        background-color: $light-pink;
+        border-radius: $border-radius;
+        padding: 20px;
+        box-shadow: $box-shadow;
+    }
+
+    a {
+        color: $primary-pink;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

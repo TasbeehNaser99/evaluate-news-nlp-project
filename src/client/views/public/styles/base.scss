@@ -1,0 +1,46 @@
+/* base.scss */
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    // background-color: $light-pink;
+    background-image: url(../img/article.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 25px;
+        // background-color: $white;
+        @include box-shadow;
+        border-radius: $border-radius;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            
+
+            label {
+                margin-bottom: 12px;
+                font-weight: bold;
+                color: $dark-pink;
+            }
+
+            input[type="text"] {
+                padding: 12px;
+                border: 1px solid $primary-pink;
+                border-radius: $border-radius;
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+
+            button {
+                @include button-style($primary-pink, $secondary-pink);
+            }
+        }
+    }
+}
