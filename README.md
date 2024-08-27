@@ -61,11 +61,8 @@ npm start
 To execute the unit tests for the project:
 npm run test
 
-![image](https://github.com/user-attachments/assets/f6a1a3d4-d547-47f1-bb51-c1610967b031)
 
 
 
-
-https://github.com/user-attachments/assets/fa7a171f-f138-495c-bf7c-4eaed659305a
 
 
